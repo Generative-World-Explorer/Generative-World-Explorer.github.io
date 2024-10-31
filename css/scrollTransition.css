@@ -1,0 +1,7 @@
+.scroll-color-transition, .header-span-gradient {
+    color: white !important;
+    background: none !important;  /* Ensure no background effects */
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+    text-shadow: none !important;
+}
