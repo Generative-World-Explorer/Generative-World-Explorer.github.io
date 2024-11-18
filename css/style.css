@@ -1,0 +1,506 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap'); */
+
+
+/* @font-face {
+  font-family: 'Hind Madurai';
+  src: url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: url('https://fonts.googleapis.com/css2?family=Candara&display=swap') format('woff2');
+  font-display: swap;
+} */
+
+
+
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+input[type="file"]:focus-visible {
+  outline: 0.125rem solid #4d65ff;
+  outline-offset: 0.125rem;
+}
+
+/* Set color style to inherit */
+.inherit-color * {
+  color: inherit;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext> :not(div):first-child,
+.w-richtext>div:first-child> :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+/* Make sure containers never lose their center alignment */
+.container-medium,
+.container-small,
+.container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.text-style-3lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+
+  .hide,
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-mobile-landscape {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+.margin-0 {
+  margin: 0rem !important;
+}
+
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+  padding: 0rem !important;
+  margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+
+
+
+
+
+
+.page-wrapper {
+  overflow-x: hidden;
+}
+
+
+
+/* New class for Hind Madurai Bold */
+
+
+
+.title-heading {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000;
+  margin: 0;
+  /* Remove all margins */
+  padding: 0;
+  /* Remove all padding */
+  line-height: 1;
+  /* Adjust line-height to minimize spacing */
+}
+
+.authors-heading {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  /* Remove all margins */
+  padding: 0;
+  /* Remove all padding */
+  line-height: 1;
+  /* Adjust line-height to minimize spacing */
+}
+
+
+
+.nav-header {
+  font-family: 'Candara', sans-serif;
+  font-size: 24px;
+  /* adjust as needed */
+  font-weight: bold;
+  /* bold */
+  color: #FFFFFF;
+  /* white */
+  text-align: center;
+  /* center aligned */
+}
+
+
+
+
+
+.navbar_link {
+  width: auto;
+  padding: .75rem 0;
+  font-size: 1.125rem
+}
+
+.navbar_link {
+  font-family: 'Candara', sans-serif;
+  color: #e3e3e3;
+  margin: 0;
+  padding: 1rem;
+  transition: opacity .3s;
+  display: block
+}
+
+.navbar_link:hover {
+  opacity: .7
+}
+
+.navbar_link.w--current {
+  color: #e3e3e3;
+  font-weight: 400
+}
+
+.navbar_link.is-dropdown {
+  padding: 0
+}
+
+.navbar_link.is-dropdown:hover {
+  opacity: 1
+}
+
+
+
+
+.glowing-logo {
+  padding-top: 0px;
+  /* Your existing padding */
+  position: relative;
+  z-index: 1;
+  /* Makes sure the logo stays on top of the glow */
+}
+
+
+
+
+.link-bottom {
+  border-radius: 0.5rem;
+  background-color: var(--purple);
+  background-color: #827a85;
+  /* Change this value to set the button's background color */
+  color: #ffffff;
+  /* Change this value to set the text color */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: .85rem 1.15rem;
+  font-weight: 500;
+  display: flex
+}
+
+
+
+
+/* Video Section */
+.video-section {
+  padding: 40px 0;
+  /* Less padding for a more compact design */
+  background-color: transparent;
+  /* No background change, keeping your existing background */
+}
+
+.video-title {
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 28px;
+  /* Smaller title font */
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  /* Less margin for a more compact layout */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  /* Smaller video width */
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Slightly smaller shadow */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .video-title {
+    font-size: 22px;
+    /* Even smaller font for mobile */
+  }
+
+  .video-container {
+    max-width: 90%;
+    /* Adjust video width for smaller screens */
+  }
+}
+
+
+/* Parent container for the images */
+.section-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* General styles for larger screens */
+.hero_gradient {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  inset: -450px 0% auto;
+  /* Desktop positioning */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-sparklers {
+  z-index: -1;
+  position: absolute;
+  inset: 50px 0% auto;
+  /* Desktop positioning */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 1024px) {
+  .hero_gradient {
+    inset: -250px 0% auto;
+    /* Adjusted for tablets */
+  }
+
+  .footer-sparklers {
+    inset: 30px 0% auto;
+    /* Adjusted for tablets */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero_gradient {
+    inset: -100px 0% auto;
+    /* Adjusted for mobile */
+  }
+
+  .footer-sparklers {
+    inset: 10px 0% auto;
+    /* Adjusted for mobile */
+  }
+}
+
+/* Ultra-wide screens (21:9 aspect ratio) */
+@media screen and (min-width: 2560px) {
+  .hero_gradient {
+    inset: -600px 0% auto;
+    /* Adjusted for ultra-wide 21:9 screens */
+    width: 100%;
+    background-size: cover;
+    /* Ensure the background covers the section */
+  }
+
+  .footer-sparklers {
+    inset: 70px 0% auto;
+    /* Adjusted for ultra-wide 21:9 screens */
+    width: 100%;
+    background-size: contain;
+    /* Keep the sparkles proportional */
+  }
+}
+
+
+
+
+
+.ask-component_text-wrapper {
+  background-color: #ffffff0d;
+  border-radius: .75rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  margin-bottom: 0.3em;
+}
+
+
+.ask-component_top-wrapper {
+  grid-column-gap: 0rem;
+  grid-row-gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex
+}
+
+.ask-component_wrapper {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  border: 3px solid var(--border-white);
+  border-radius: var(--border-2rem);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: #d2d2f6;
+  flex-flow: column;
+  padding: 1.75rem 2rem;
+  display: flex;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .ask-component_wrapper {
+    padding: 1.75rem 0;
+    /* 0 padding on sides */
+    margin-left: 0.5em;
+    /* Remove left margin */
+    margin-right: 0.5em;
+    /* Remove right margin */
+  }
+}
+
+
+
+.svg-transparent {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.svg-transparent.transparent {
+  opacity: 0;
+}
+
+
+.fade-out {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Controlled Video</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            height: 300vh; /* Ensures there is enough content to scroll */
+        }
+
+        #video-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #scroll-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* Hide the video until it is ready to play */
+        }
+
+        .after-video-content {
+            height: 100vh; /* Normal content after the video */
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div id="video-container">
+            <video id="scroll-video" muted playsinline>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="after-video-content">
+            <p>This is the content that appears after the video.</p>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('scroll-video');
+        const videoContainer = document.getElementById('video-container');
+
+        let videoDuration = 0;
+        let videoPlayed = false;
+        let scrollingAllowed = false;
+
+        // Ensure the video metadata is loaded before using the duration
+        video.addEventListener('loadedmetadata', () => {
+            videoDuration = video.duration;
+            video.style.display = 'block'; // Display video once it's ready
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            // If video has not finished playing, control it with scroll
+            if (!scrollingAllowed && scrollY <= windowHeight && !videoPlayed) {
+                const scrollPercent = scrollY / windowHeight;
+                const videoTime = scrollPercent * videoDuration;
+                video.currentTime = videoTime;
+                window.scrollTo(0, scrollY);  // Freeze scroll while video plays
+            }
+
+            // When video reaches the end, allow normal scrolling and freeze at the last frame
+            if (scrollY > windowHeight && !scrollingAllowed) {
+                video.currentTime = videoDuration; // Freeze at the last frame
+                video.pause(); // Pause the video at the end
+                scrollingAllowed = true;  // Allow normal scroll after video ends
+            }
+        });
+    </script>
+
+</body>
+</html>

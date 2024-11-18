@@ -1,0 +1,14 @@
+
+.text-span-gradient {
+  background: var(--Color-Gradient, linear-gradient(90deg, #FFB904 0.01%, #45FFFF 52.55%, #8B18FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+.header-span-gradient {
+  background-size: 500%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
