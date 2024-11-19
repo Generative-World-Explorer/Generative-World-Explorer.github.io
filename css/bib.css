@@ -1,0 +1,60 @@
+.bibtex-container {
+    position: relative;
+    padding-top: 15px;
+    margin-top: 10px;
+    background-color: #ffffff0d;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically (if required) */
+}
+
+.bibtex-text {
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    font-weight: 400 !important; /* Reset bold explicitly */
+    color: inherit; /* Ensure color matches expectations */
+    margin: 0;
+}
+
+.copy-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-button .copy-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.copy-button:hover .copy-icon {
+    filter: brightness(0.8);
+}
+
+    /* New class to handle responsiveness */
+    .responsive-box {
+        width: 80%; /* Default width */
+        max-width: 800px; /* Maximum width */
+        margin: 0 auto; /* Center the box horizontally */
+    }
+
+    /* Adjust for smaller screens */
+    @media (max-width: 1200px) {
+        .responsive-box {
+            width: 85%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .responsive-box {
+            width: 90%;
+        }
+    }
