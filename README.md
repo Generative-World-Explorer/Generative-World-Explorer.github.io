@@ -7,6 +7,8 @@
     <a href="https://arxiv.org/pdf/2411.11844"><img src="https://img.shields.io/badge/arXiv-PDF-blue"></a>
 </div>
 
+--- 
+
 This is the website for **Generative World Explorer**
 
 Part of the background images are from [https://www.simular.ai/](https://www.simular.ai/)
