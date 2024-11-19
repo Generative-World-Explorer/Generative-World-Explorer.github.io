@@ -1,3 +1,24 @@
+.youtube-embed {
+  width: 747px; /* Exact width for large screens */
+  height: 420px; /* Exact height for 16:9 ratio */
+  max-width: 100%; /* Allow scaling down for small screens */
+  margin: 0 auto; /* Center the video horizontally */
+  display: block; /* Ensure the video is treated as a block element */
+  border: none; /* No border for the iframe */
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+  .youtube-embed {
+    width: 90%; /* Shrink to 90% of the screen width */
+    height: calc(90vw * 9 / 16); /* Adjust height dynamically for 16:9 ratio */
+  }
+}
+
+
+
+
+
 h2 {
     margin: 0; /* Removes all margin */
 }
