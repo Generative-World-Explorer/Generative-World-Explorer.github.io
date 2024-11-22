@@ -1,3 +1,40 @@
+.button.fixed-size {
+  width: 105.14px; /* Fixed button width */
+  height: 43.99px; /* Fixed button height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* No padding to avoid affecting the image */
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.button.fixed-size img {
+  width: auto !important; /* Allow width to be set by HTML or natural size */
+  height: auto !important; /* Allow height to be set by HTML or natural size */
+  max-width: 100%; /* Ensure it doesn't exceed the button width */
+  max-height: 100%; /* Ensure it doesn't exceed the button height */
+}
+
+.responsive-image {
+  max-width: 90%; /* Image width as a percentage of the button */
+  max-height: 80%; /* Image height as a percentage of the button */
+  padding: 9%; /* Add padding relative to the button size */
+  display: block; /* Eliminate inline spacing */
+  object-fit: contain; /* Ensure the image fits within the button dimensions */
+}
+
+.responsive-image2 {
+  max-width: 90%; /* Image width as a percentage of the button */
+  max-height: 80%; /* Image height as a percentage of the button */
+  padding: 11%; /* Add padding relative to the button size */
+  display: block; /* Eliminate inline spacing */
+  object-fit: contain; /* Ensure the image fits within the button dimensions */
+}
+
+
+
+
+
 .youtube-embed {
   width: 747px; /* Exact width for large screens */
   height: 420px; /* Exact height for 16:9 ratio */
