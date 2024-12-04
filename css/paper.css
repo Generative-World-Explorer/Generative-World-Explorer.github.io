@@ -1,3 +1,28 @@
+.authors-heading a {
+  text-decoration: none;
+  position: relative;
+}
+
+.authors-heading a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.authors-heading a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+
 .button.fixed-size {
   width: 105.14px; /* Fixed button width */
   height: 43.99px; /* Fixed button height */
