@@ -74,7 +74,7 @@
       fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" role="banner" data-duration="400">
       <div class="navbar_container">
         <a aria-current="page" class="navbar_logo-link w-nav-brand w--current">
-          <div class="nav-header header-span-gradient">Genex</div>
+          <div class="nav-header header-span-gradient">GenEx</div>
         </a>
         <nav role="navigation" class="navbar_menu is-page-height-tablet w-nav-menu">
           <a href="#video_demo" class="navbar_link w-nav-link">Video</a>
@@ -133,7 +133,7 @@
                         class="button is-secondary is-medium fixed-size">
                         <img src="images/huggingface-logo.svg" alt="Huggingface Logo" class="responsive-image">
                         </a>                     
-                        <a href="https://github.com/Beckschen/genex" target="_blank"
+                        <a href="https://github.com/Beckschen/genEx" target="_blank"
                             class="button is-secondary is-medium fixed-size">
                           <img src="images/github-logo.svg" alt="arXiv Logo" class="responsive-image2">
                         </a>
@@ -163,7 +163,7 @@
                   <div class="video-container">
                     <!-- <video id="demoVideo" controls width="100%" poster="images/demoPage.png">
                       <source
-                        src="https://dl.dropboxusercontent.com/scl/fi/84qzlnpwhxbea8336v6hx/Genex-demo.mp4?rlkey=qdj8rapl1tc7hh3qmjvdnhf7e&st=m7wb7jbw&dl=0"
+                        src="https://dl.dropboxusercontent.com/scl/fi/84qzlnpwhxbea8336v6hx/GenEx-demo.mp4?rlkey=qdj8rapl1tc7hh3qmjvdnhf7e&st=m7wb7jbw&dl=0"
                         type="video/mp4">
                       Your browser does not support the video tag.
                     </video> -->
@@ -196,16 +196,16 @@
           environment to update their beliefs about the world state. However, humans can imagine unseen parts of the
           world through a mental exploration and revise their beliefs with imagined observations. Such updated beliefs
           can allow them to make more informed decisions at the current step, without having to physically explore the
-          world first. To achieve this human-like ability, we introduce the Generative World Explorer (Genex), a video
+          world first. To achieve this human-like ability, we introduce the Generative World Explorer (GenEx), a video
           generation model that allows an agent to mentally explore a large-scale 3D world (e.g., urban scenes) and
           acquire imagined observations to update its belief about the world . </h2>
       </div>
 
       <div class="paper_section href_section" id="architecture">
         <div class="paper_section_title_box">
-          <h2 class="paper_section_title">Genex Architecture</h2>
+          <h2 class="paper_section_title">GenEx Architecture</h2>
         </div>
-        <img class="paper_images" src="images/architecture.svg" alt="Genex Architecture">
+        <img class="paper_images" src="images/architecture.svg" alt="GenEx Architecture">
         <div class="paper_section_body">
           <p>
             <strong>To support exploration, we design a variant of video generation model. </strong> It is defined as
@@ -251,9 +251,9 @@
 
       <div class="paper_section href_section" id="navigation">
         <div class="paper_section_title_box">
-          <h2 class="paper_section_title">Genex Navigation</h2>
+          <h2 class="paper_section_title">GenEx Navigation</h2>
         </div>
-        <!-- <img class="paper_images-small" src="images/navigation.png" alt="Genex Navigation Algo"> -->
+        <!-- <img class="paper_images-small" src="images/navigation.png" alt="GenEx Navigation Algo"> -->
         <div class="paper_section_body">
           <p>
             <strong>Our trained diffuser seamlessly adapts as a world explorer, to support navigation in a imaginative
@@ -263,7 +263,7 @@
             generative world explorer.
           </p>
         </div>
-        <img class="paper_images-large" src="images/navigation_transparent.gif" alt="Genex Navigation" loading="lazy">
+        <img class="paper_images-large" src="images/navigation_transparent.gif" alt="GenEx Navigation" loading="lazy">
       </div>
       <!-- src="https://dl.dropboxusercontent.com/scl/fi/k1qn9secd8puqkflfxqny/navigation_transparent.gif?rlkey=tmcyxx76yebd48wkh6m52uskg&st=a8m2woik&dl=0" -->
 
@@ -273,7 +273,7 @@
         </div>
         <div class="paper_section_body">
           <p>
-            <strong>To ensure generation quality, we introduce navigational cycle consistency.</strong> Genex navigates
+            <strong>To ensure generation quality, we introduce navigational cycle consistency.</strong> GenEx navigates
             a randomly sampled closed path, returning to the origin. In optimal cases, the start and end views are
             identical, ensuring consistency in world modeling.
           </p>
@@ -284,7 +284,7 @@
 
       <div class="paper_section href_section" id="embodied">
         <div class="paper_section_title_box">
-          <h2 class="paper_section_title">Genex for Embodied AI</h2>
+          <h2 class="paper_section_title">GenEx for Embodied AI</h2>
         </div>
         <video id="EQA" autoplay muted playsinline>
           <source src="images/EQA.mp4" type="video/mp4">
@@ -292,12 +292,12 @@
         </video>
         <div class="paper_section_body">
           <p>
-            <strong>Genex gives a new level of intelligence to embodied AI agents.</strong>
+            <strong>GenEx gives a new level of intelligence to embodied AI agents.</strong>
             For a single-agent scenario involving decision-making, picture yourself driving down a street when a siren
-            sounds, but you can’t see the source. With Genex, you project what’s ahead. It reveals an ambulance just
+            sounds, but you can’t see the source. With GenEx, you project what’s ahead. It reveals an ambulance just
             around the corner. You stop crossing the street to make space for it to pass.
             For a multi-agent scenario involving interaction, suppose you are waiting at a red light. You see a
-            pedestrian and an approaching car, and everything seems fine. But Genex helps you recognize that the
+            pedestrian and an approaching car, and everything seems fine. But GenEx helps you recognize that the
             pedestrian can’t see the car. Likewise, the car can’t see the pedestrian. Your vehicle is blocking their
             views. Realizing this, you act immediately to warn them, preventing a collision.
           </p>
