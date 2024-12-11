@@ -108,14 +108,14 @@ h2 {
 
 .paper_section {
     margin-bottom: 100px;
-    width: 50%;
+    width: 40%;
     margin: 0 auto 100px auto;
   }
   
   /* Media query for smaller screens (tablets and below) */
   @media (max-width: 1024px) {
     .paper_section {
-      width: 70%; /* Adjust to 70% for medium screens */
+      width: 60%; /* Adjust to 70% for medium screens */
     }
   }
   
