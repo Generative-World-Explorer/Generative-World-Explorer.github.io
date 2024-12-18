@@ -11,7 +11,7 @@
 
 .bibtex-text {
     font-family: 'Poppins', 'EB Garamond', serif;
-    font-size: 14px;
+    font-size: 12px;
     white-space: pre-wrap;
     overflow-x: auto;
     font-weight: 400 !important; /* Reset bold explicitly */
